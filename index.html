@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Appli Météo</title>
+    <meta charset="UTF-8" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-cover app h-screen" style="background-image: url(img/sun.jpg);">
+    <div class="flex justify-center text-2xl xl:font-semibold lg:font-semibold md:font-semibold sm:font-black border m-auto bg-blue-500 xl:w-64  md:w-64 pt-4 pb-4 rounded mt-20 sm:text-6xl xl:text-xl lg:text-xl md:text-xl">Appli Météo</div>
+    <form class="flex flex-col justify-center">
+        <select id="zone_selection" type="select" class="shadow appearance-none border rounded py-2 px-3 text-grey-darker text-black w-64 m-auto mt-10 sm:text-4xl xl:text-xl lg:text-xl md:text-4xl">
+            <option value="London,uk">London</option>
+            <option value="Nice,fr">Nice</option>
+            <option value="Clermont-Ferrand,fr">Clermont-Fd</option>
+            <option value="Bournoncle-Saint-Pierre,fr">Bournoncle-St-Pierre</option>
+            <option value="Marseille,fr">Marseille</option>
+        </select-->
+        <input type="button" value="Valider" onclick="GetCity()" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded w-64 mt-10 m-auto sm:text-4xl xl:text-xl lg:text-xl md:text-4xl"/>   
+    </form> 
+    
+   
+    <div class="flex flex-col justify-center text-2xl font-semibold border m-auto bg-blue-500 w-64 pt-4 pb-4 rounded xl:w-3/4 md:w-3/4 lg:w-3/4 sm:w-full mt-10">
+        <div id="zone_meteo_0_date" class="pt-4 m-auto sm:text-4xl xl:text-xl lg:text-xl md:text-4xl"></div>
+        <div id="zone_meteo_0_temp" class="pb-4 m-auto sm:text-4xl xl:text-xl lg:text-xl md:text-4xl"></div>
+        <div id="zone_meteo_1_date" class="pt-4 m-auto sm:text-4xl xl:text-xl lg:text-xl md:text-4xl"></div>
+        <div id="zone_meteo_1_temp" class="pb-4 m-auto sm:text-4xl xl:text-xl lg:text-xl md:text-4xl"></div>
+        <div id="zone_meteo_2_date" class="pt-4 m-auto sm:text-4xl xl:text-xl lg:text-xl md:text-4xl"></div>
+        <div id="zone_meteo_2_temp" class="pb-4 m-auto sm:text-4xl xl:text-xl lg:text-xl md:text-4xl"></div>
+    </div> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>   
+</body>
+
+</html>
